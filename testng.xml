@@ -1,0 +1,10 @@
+
+
+<!DOCTYPE suite SYSTEM "testng.dtd">
+<suite name="Regression TestSuite">
+	<test name="Application Test">
+		<classes>
+			<class name="com.expedia.flightbooking.PageObjectModel"></class>
+		</classes>
+	</test>
+</suite>

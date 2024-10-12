@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE suite SYSTEM "regression.dtd">
+<suite name="Regression TestSuite">
+	<test name="GroupsDemo">
+	<groups>
+		<define name="all">
+			<include name="bikes"></include>
+			<include name="suv"></include>
+			<include name="sedan"></include>
+		</define>
+		<define name="nobikes">
+			<include name="suv"></include>
+			<include name="sedan"></include>
+		</define>
+			<run>
+				<include name="all"></include>
+			</run>
+	</groups>
+		<classes>
+			<class name="com.expedia.flightbooking.TestNG_Grouping"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,13 @@
+<!ELEMENT suite (test)>
+<!ATTLIST suite name CDATA #REQUIRED>
+<!ELEMENT test (groups,classes)>
+<!ATTLIST test name NMTOKEN #REQUIRED>
+<!ELEMENT groups (define+,run)>
+<!ELEMENT define (include+)>
+<!ATTLIST define name NMTOKEN #REQUIRED>
+<!ELEMENT include EMPTY>
+<!ATTLIST include name NMTOKEN #REQUIRED>
+<!ELEMENT run (include)>
+<!ELEMENT classes (class)>
+<!ELEMENT class EMPTY>
+<!ATTLIST class name NMTOKEN #REQUIRED>
